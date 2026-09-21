@@ -1,5 +1,4 @@
-import express from 'react'; // Wait, need to use proper imports for server. Let's fix that.
-import expressApp from 'express';
+import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
@@ -10,7 +9,7 @@ import { z } from 'zod';
 
 dotenv.config();
 
-const app = expressApp();
+const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || 'secret';
@@ -18,7 +17,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'secret';
 // Middleware
 app.use(helmet());
 app.use(cors());
-app.use(expressApp.json());
+app.use(express.json());
 
 // Init Admin User
 const initAdmin = async () => {
