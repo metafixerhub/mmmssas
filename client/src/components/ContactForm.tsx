@@ -80,7 +80,7 @@ const ContactForm = () => {
               {t.contact.callNow}
             </a>
             <a 
-              href={`https://wa.me/91${import.meta.env.VITE_BUSINESS_PHONE?.replace(/^0+/, '')}`} 
+              href={`https://wa.me/${(import.meta.env.VITE_BUSINESS_PHONE || '').replace(/\\D/g, '').startsWith('91') ? (import.meta.env.VITE_BUSINESS_PHONE || '').replace(/\\D/g, '') : '91' + (import.meta.env.VITE_BUSINESS_PHONE || '').replace(/\\D/g, '').replace(/^0+/, '')}`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-secondary btn-block mt-2"
