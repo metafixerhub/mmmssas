@@ -25,7 +25,7 @@ const Awards = () => {
             <div className="image-frame">
               {/* Fallback styling in case image isn't loaded yet */}
               <img 
-                src="/images/gym/awards.jpg" 
+                src="/images/gym/awards.png" 
                 alt="Gym Awards and Medals" 
                 className="awards-image"
                 onError={(e) => {
