@@ -30,9 +30,15 @@ const LocationSection = () => {
           </div>
           
           <div className="location-map">
-            <div className="map-placeholder">
-              <span>{t.nav.location.toUpperCase()} MAP</span>
-            </div>
+            <iframe 
+              src={`https://maps.google.com/maps?q=${encodeURIComponent('Dronacharya The Fitness Gurukula, Krishnarajpete, Karnataka')}&t=&z=16&ie=UTF8&iwloc=&output=embed`}
+              width="100%" 
+              height="100%" 
+              style={{ border: 0, minHeight: '400px', borderRadius: '4px' }} 
+              allowFullScreen 
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
