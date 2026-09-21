@@ -1,0 +1,72 @@
+.training-section {
+  background-color: var(--color-bg-secondary);
+}
+
+.training-steps-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.training-step {
+  position: relative;
+}
+
+.step-number-card {
+  background-color: transparent;
+  padding: 3rem 2rem;
+  border-left: 2px solid var(--color-border);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.step-count {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.03);
+  font-family: var(--font-heading);
+  line-height: 1;
+  z-index: 0;
+  transition: color var(--transition-slow);
+}
+
+.step-number-card:hover .step-count {
+  color: rgba(255, 42, 42, 0.1);
+}
+
+.step-number-card:hover {
+  border-left-color: var(--color-accent);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.step-number-card h3 {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number-card p {
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .training-steps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .training-steps-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

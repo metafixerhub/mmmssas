@@ -1,0 +1,65 @@
+.location-section {
+  background-color: var(--color-bg);
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.location-content {
+  text-align: left;
+}
+
+.text-left {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.location-name {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.location-address {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.location-phone {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.location-map {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.map-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  .location-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
