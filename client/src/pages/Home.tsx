@@ -6,6 +6,7 @@ import Features from '../components/Features';
 import Facilities from '../components/Facilities';
 import TrainingExperience from '../components/TrainingExperience';
 import TrainerSection from '../components/TrainerSection';
+import Awards from '../components/Awards';
 import WomensFitness from '../components/WomensFitness';
 import Reviews from '../components/Reviews';
 import Gallery from '../components/Gallery';
@@ -28,6 +29,7 @@ const Home = () => {
       <Facilities />
       <TrainingExperience />
       <TrainerSection />
+      <Awards />
       <WomensFitness />
       <Reviews />
       <Gallery />

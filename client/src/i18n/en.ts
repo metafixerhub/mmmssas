@@ -71,6 +71,10 @@ export const en = {
     title: "GYM MASTER & TRAINING GUIDANCE",
     description: "Our focused guidance helps you with workout routines, training tips, exercise support, form awareness, and motivation to maintain consistency.",
   },
+  awards: {
+    title: "OUR ACHIEVEMENTS & AWARDS",
+    description: "Dedication and hard work lead to greatness. At Dronacharya The Fitness Gurukula, we pride ourselves on building champions. Our collection of trophies and medals represents our commitment to excellence, discipline, and pushing limits in every single workout.",
+  },
   womensFitness: {
     title: "A COMFORTABLE PLACE TO TRAIN",
     description: "Our customer feedback highlights a comfortable, non-judgmental environment where women can focus entirely on their workouts.",
