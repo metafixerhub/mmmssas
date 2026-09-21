@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .footer {
   background-color: #000;
   border-top: 1px solid var(--color-border);
@@ -70,6 +72,24 @@
   text-align: center;
   color: var(--color-muted);
   font-size: 0.875rem;
+}
+
+.minecraft-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.65rem !important; /* Smaller size since this font is naturally wide */
+  line-height: 1.5;
+  margin-top: 1.5rem !important;
+  color: var(--color-muted);
+}
+
+.minecraft-text .powered-by-link {
+  color: #ff2a2a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.minecraft-text .powered-by-link:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {

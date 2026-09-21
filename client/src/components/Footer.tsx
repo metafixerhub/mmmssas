@@ -37,18 +37,17 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>{t.footer.rights}</p>
-        <p style={{ marginTop: '0.75rem', fontSize: '0.875rem' }}>
+        <p className="minecraft-text">
           POWERED BY{' '}
           <a 
             href="https://wa.me/9190741690744?text=i%20also%20wang%20to%20build%20my%20website" 
             target="_blank" 
             rel="noopener noreferrer"
             className="powered-by-link"
-            style={{ color: '#ff2a2a', fontWeight: 'bold', textDecoration: 'none', transition: 'color 0.2s' }}
           >
             NUR MOHAMMAD MANDAL
           </a>
-          <svg width="14" height="14" viewBox="0 0 7 6" fill="#ff2a2a" style={{ display: 'inline-block', margin: '0 4px', verticalAlign: 'middle', imageRendering: 'pixelated' }}>
+          <svg width="14" height="14" viewBox="0 0 7 6" fill="#ff2a2a" style={{ display: 'inline-block', margin: '0 8px', verticalAlign: 'middle', imageRendering: 'pixelated' }}>
             <path d="M1 0h2v1H1zM4 0h2v1H4zM0 1h7v2H0zM1 3h5v1H1zM2 4h3v1H2zM3 5h1v1H3z" />
           </svg>
         </p>
