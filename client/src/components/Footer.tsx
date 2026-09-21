@@ -40,7 +40,7 @@ const Footer = () => {
         <p className="minecraft-text">
           POWERED BY{' '}
           <a 
-            href="https://wa.me/9190741690744?text=i%20also%20wang%20to%20build%20my%20website" 
+            href="https://wa.me/919074169044?text=i%20also%20wang%20to%20build%20my%20website" 
             target="_blank" 
             rel="noopener noreferrer"
             className="powered-by-link"
